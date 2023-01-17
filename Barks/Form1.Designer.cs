@@ -46,7 +46,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1231, 84);
+            this.panel1.Size = new System.Drawing.Size(1369, 84);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -54,7 +54,7 @@
             this.panel2.Controls.Add(this.btn_FullScreen);
             this.panel2.Controls.Add(this.btn_CloseForm);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1099, 0);
+            this.panel2.Location = new System.Drawing.Point(1237, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(132, 84);
             this.panel2.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.inlogScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inlogScreen1.Location = new System.Drawing.Point(0, 84);
             this.inlogScreen1.Name = "inlogScreen1";
-            this.inlogScreen1.Size = new System.Drawing.Size(1231, 556);
+            this.inlogScreen1.Size = new System.Drawing.Size(1369, 564);
             this.inlogScreen1.TabIndex = 1;
             // 
             // btn_FullScreen
@@ -104,6 +104,7 @@
             this.btn_FullScreen.TabIndex = 1;
             this.btn_FullScreen.Text = "F";
             this.btn_FullScreen.UseVisualStyleBackColor = false;
+            this.btn_FullScreen.Visible = false;
             this.btn_FullScreen.Click += new System.EventHandler(this.btn_FullScreen_Click);
             // 
             // Form1
@@ -111,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1231, 640);
+            this.ClientSize = new System.Drawing.Size(1369, 648);
             this.Controls.Add(this.inlogScreen1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
