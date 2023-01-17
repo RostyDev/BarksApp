@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barks", "Barks\Barks.csproj", "{30210CA6-5796-47AE-B235-F93804DD2D3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarksAPI", "BarksAPI\BarksAPI.csproj", "{DEED081F-383E-4F50-900C-EE744595FF34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{30210CA6-5796-47AE-B235-F93804DD2D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30210CA6-5796-47AE-B235-F93804DD2D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30210CA6-5796-47AE-B235-F93804DD2D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEED081F-383E-4F50-900C-EE744595FF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEED081F-383E-4F50-900C-EE744595FF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEED081F-383E-4F50-900C-EE744595FF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEED081F-383E-4F50-900C-EE744595FF34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
