@@ -8,6 +8,9 @@ namespace BarksAPI
 {
     public class BasicDBfunctions
     {
+        private void MakeConnection()
+        {
 
+        }
     }
 }
