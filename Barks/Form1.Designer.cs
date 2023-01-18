@@ -34,6 +34,7 @@
             this.btn_CloseForm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.hooftmenu1 = new Barks.Hooftmenu();
+            this.inlogScreen2 = new Barks.InlogScreen();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -70,10 +71,11 @@
             this.btn_FullScreen.Location = new System.Drawing.Point(16, 22);
             this.btn_FullScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_FullScreen.Name = "btn_FullScreen";
-            this.btn_FullScreen.Size = new System.Drawing.Size(49, 46);
+            this.btn_FullScreen.Size = new System.Drawing.Size(49, 45);
             this.btn_FullScreen.TabIndex = 1;
             this.btn_FullScreen.Text = "F";
             this.btn_FullScreen.UseVisualStyleBackColor = false;
+            this.btn_FullScreen.Visible = false;
             this.btn_FullScreen.Click += new System.EventHandler(this.btn_FullScreen_Click);
             // 
             // btn_CloseForm
@@ -107,32 +109,19 @@
             this.hooftmenu1.BackColor = System.Drawing.Color.Gray;
             this.hooftmenu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hooftmenu1.Location = new System.Drawing.Point(0, 0);
-            this.hooftmenu1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hooftmenu1.Margin = new System.Windows.Forms.Padding(5);
             this.hooftmenu1.Name = "hooftmenu1";
             this.hooftmenu1.Size = new System.Drawing.Size(1363, 878);
             this.hooftmenu1.TabIndex = 1;
-            // inlogScreen1
             // 
-            this.inlogScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inlogScreen1.Location = new System.Drawing.Point(0, 84);
-            this.inlogScreen1.Name = "inlogScreen1";
-            this.inlogScreen1.Size = new System.Drawing.Size(1369, 564);
-            this.inlogScreen1.TabIndex = 1;
+            // inlogScreen2
             // 
-            // btn_FullScreen
-            // 
-            this.btn_FullScreen.BackColor = System.Drawing.Color.Black;
-            this.btn_FullScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_FullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_FullScreen.ForeColor = System.Drawing.Color.Yellow;
-            this.btn_FullScreen.Location = new System.Drawing.Point(16, 22);
-            this.btn_FullScreen.Name = "btn_FullScreen";
-            this.btn_FullScreen.Size = new System.Drawing.Size(49, 45);
-            this.btn_FullScreen.TabIndex = 1;
-            this.btn_FullScreen.Text = "F";
-            this.btn_FullScreen.UseVisualStyleBackColor = false;
-            this.btn_FullScreen.Visible = false;
-            this.btn_FullScreen.Click += new System.EventHandler(this.btn_FullScreen_Click);
+            this.inlogScreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.inlogScreen2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inlogScreen2.Location = new System.Drawing.Point(0, 84);
+            this.inlogScreen2.Name = "inlogScreen2";
+            this.inlogScreen2.Size = new System.Drawing.Size(1363, 794);
+            this.inlogScreen2.TabIndex = 2;
             // 
             // Form1
             // 
@@ -140,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1363, 878);
-            this.Controls.Add(this.inlogScreen1);
+            this.Controls.Add(this.inlogScreen2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.hooftmenu1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -163,6 +152,7 @@
         private InlogScreen inlogScreen1;
         private System.Windows.Forms.Button btn_FullScreen;
         private Hooftmenu hooftmenu1;
+        private InlogScreen inlogScreen2;
     }
 }
 
