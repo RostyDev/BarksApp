@@ -211,6 +211,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Hooftmenu";
             this.Size = new System.Drawing.Size(1015, 709);
+            this.Load += new System.EventHandler(this.Hooftmenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
