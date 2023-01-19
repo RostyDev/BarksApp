@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accountpagina.cs" />
     <Compile Include="InlogAPIfuncties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,11 +1,11 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace BarksAPI2._0
 {
@@ -31,8 +31,6 @@ namespace BarksAPI2._0
 
             var cmd = new MySqlCommand("SELECT Emailadress, AccountWW FROM accounts WHERE Emailadress LIKE '" + EmailAdres + "'");
             var reader = cmd.ExecuteReader();
-
-
         }
     }
 }

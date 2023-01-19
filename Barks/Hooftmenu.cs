@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BarksAPI2._0;
 
 namespace Barks
 {
@@ -26,7 +27,11 @@ namespace Barks
 
         private void Hooftmenu_Load(object sender, EventArgs e)
         {
+            Accountpagina account = new Accountpagina();
 
+            account.Profile();
+            lbl_accountname.Text = account.Accountsnickname[0];
+            rh_bio.Text= account.AccountsBio[0];
         }
     }
 }
