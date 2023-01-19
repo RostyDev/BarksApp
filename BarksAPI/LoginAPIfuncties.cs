@@ -11,6 +11,8 @@ namespace BarksAPI
 {
     public class LoginAPIfuncties
     {
+        public string EmailAdres { get; set; }
+
         private void MakeConn()
         {
             MySqlConnection Conn;
@@ -25,6 +27,11 @@ namespace BarksAPI
 
         public void Login()
         {
+            MakeConn();
+
+            var cmd = new MySqlCommand("SELECT Emailadress, AccountWW FROM accounts WHERE Emailadress LIKE '"+ EmailAdres +"'");
+            var reader = cmd.ExecuteReader();
+
 
         }
     }
