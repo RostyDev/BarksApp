@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Inloggen = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lb_NoAccount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +130,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.lb_NoAccount);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.btn_Inloggen);
             this.panel4.Controls.Add(this.tb_Email);
@@ -138,6 +140,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(523, 440);
             this.panel4.TabIndex = 10;
+            // 
+            // lb_NoAccount
+            // 
+            this.lb_NoAccount.AutoSize = true;
+            this.lb_NoAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_NoAccount.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_NoAccount.Location = new System.Drawing.Point(142, 403);
+            this.lb_NoAccount.Name = "lb_NoAccount";
+            this.lb_NoAccount.Size = new System.Drawing.Size(223, 20);
+            this.lb_NoAccount.TabIndex = 10;
+            this.lb_NoAccount.Text = "Nog geen account? Klik hier!";
+            this.lb_NoAccount.Click += new System.EventHandler(this.lb_NoAccount_Click);
             // 
             // InlogScreen
             // 
@@ -149,7 +163,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "InlogScreen";
             this.Size = new System.Drawing.Size(1339, 701);
-            this.Load += new System.EventHandler(this.InlogScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -168,5 +181,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_Inloggen;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lb_NoAccount;
     }
 }
