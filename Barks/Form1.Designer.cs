@@ -125,6 +125,16 @@
             this.hooftmenu1.Size = new System.Drawing.Size(1022, 713);
             this.hooftmenu1.TabIndex = 1;
             // 
+            // inlogScreen2
+            // 
+            this.inlogScreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.inlogScreen2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inlogScreen2.Location = new System.Drawing.Point(0, 84);
+            this.inlogScreen2.Name = "inlogScreen2";
+            this.inlogScreen2.Size = new System.Drawing.Size(1363, 794);
+            this.inlogScreen2.TabIndex = 2;
+            this.inlogScreen2.Load += new System.EventHandler(this.inlogScreen2_Load);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
