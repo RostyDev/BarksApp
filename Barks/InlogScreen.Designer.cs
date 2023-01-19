@@ -98,7 +98,6 @@
             this.tb_UserWW.ForeColor = System.Drawing.Color.Yellow;
             this.tb_UserWW.Location = new System.Drawing.Point(69, 176);
             this.tb_UserWW.Name = "tb_UserWW";
-            this.tb_UserWW.PasswordChar = '*';
             this.tb_UserWW.Size = new System.Drawing.Size(380, 36);
             this.tb_UserWW.TabIndex = 7;
             // 

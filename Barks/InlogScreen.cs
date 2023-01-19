@@ -13,6 +13,8 @@ namespace Barks
 {
     public partial class InlogScreen : UserControl
     {
+        bool RealWW = false;
+
         public InlogScreen()
         {
             InitializeComponent();
@@ -28,7 +30,29 @@ namespace Barks
             InlogAPIfuncties InlogCheck = new InlogAPIfuncties();
 
             InlogCheck.EmailAdres = tb_Email.Text;
-            InlogCheck.Login();
+
+            try
+            {
+                InlogCheck.Login();
+            }
+            catch (Exception)
+            {
+                string message = "Emailadres is verkeerd of bestaat nog niet.";
+                string caption = "Email fout";
+                MessageBox.Show(message, caption);
+                throw;
+            }
+
+            InlogCheck.Hash(tb_UserWW.Text);
+            if (InlogCheck.HashWW == InlogCheck.AccountPassword)
+            {
+                RealWW = true;
+            }
+
+            if (tb_Email.Text == InlogCheck.EmailAdres && RealWW == true)
+            {
+                this.Visible = false;
+            }
         }
     }
 }
