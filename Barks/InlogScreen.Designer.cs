@@ -98,6 +98,7 @@
             this.tb_UserWW.ForeColor = System.Drawing.Color.Yellow;
             this.tb_UserWW.Location = new System.Drawing.Point(69, 176);
             this.tb_UserWW.Name = "tb_UserWW";
+            this.tb_UserWW.PasswordChar = '*';
             this.tb_UserWW.Size = new System.Drawing.Size(380, 36);
             this.tb_UserWW.TabIndex = 7;
             // 
@@ -148,7 +149,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "InlogScreen";
             this.Size = new System.Drawing.Size(1339, 701);
-            this.Load += new System.EventHandler(this.InlogScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
