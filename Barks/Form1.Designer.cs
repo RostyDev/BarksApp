@@ -122,6 +122,7 @@
             this.inlogScreen2.Name = "inlogScreen2";
             this.inlogScreen2.Size = new System.Drawing.Size(1363, 794);
             this.inlogScreen2.TabIndex = 2;
+            this.inlogScreen2.Load += new System.EventHandler(this.inlogScreen2_Load);
             // 
             // Form1
             // 

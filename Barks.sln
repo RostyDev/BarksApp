@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barks", "Barks\Barks.csproj", "{30210CA6-5796-47AE-B235-F93804DD2D3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarksAPI", "BarksAPI\BarksAPI.csproj", "{DEED081F-383E-4F50-900C-EE744595FF34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30210CA6-5796-47AE-B235-F93804DD2D3C} = {30210CA6-5796-47AE-B235-F93804DD2D3C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
