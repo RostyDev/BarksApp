@@ -70,5 +70,10 @@ namespace Barks
                 tb_UserWW.Text = "";
             }
         }
+
+        private void lb_NoAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
