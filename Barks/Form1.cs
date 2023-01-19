@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace Barks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_CloseForm_Click(object sender, EventArgs e)
@@ -30,6 +31,11 @@ namespace Barks
         private void btn_FullScreen_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+        }
+
+        private void inlogScreen2_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
