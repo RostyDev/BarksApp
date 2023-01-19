@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarksAPI2._0;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,10 @@ namespace Barks
 
         private void btn_Inloggen_Click(object sender, EventArgs e)
         {
-            
+            InlogAPIfuncties InlogCheck = new InlogAPIfuncties();
+
+            InlogCheck.EmailAdres = tb_Email.Text;
+            InlogCheck.Login();
         }
     }
 }

@@ -32,7 +32,10 @@ namespace BarksAPI2._0
             var cmd = new MySqlCommand("SELECT Emailadress, AccountWW FROM accounts WHERE Emailadress LIKE '" + EmailAdres + "'");
             var reader = cmd.ExecuteReader();
 
+            while (reader.Read())
+            {
 
+            }
         }
     }
 }

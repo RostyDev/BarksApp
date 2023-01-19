@@ -142,5 +142,11 @@
   <ItemGroup>
     <None Include="Resources\Schermafbeelding 2022-11-10 164150.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarksAPI2.0\BarksAPI2.0.csproj">
+      <Project>{5653693d-8d22-4c54-9322-b1cb86412c79}</Project>
+      <Name>BarksAPI2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
