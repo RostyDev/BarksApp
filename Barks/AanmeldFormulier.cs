@@ -16,5 +16,11 @@ namespace Barks
         {
             InitializeComponent();
         }
+
+        private void lb_YesAccount_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            
+        }
     }
 }
