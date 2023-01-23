@@ -13,8 +13,9 @@ namespace BarksAPI2._0
     {
         public List<string> Accountsnickname = new List<string>();
         public List<string> AccountsBio = new List<string>();
-        
 
+        public string titel;
+        public string text;
 
         //connectie string, zit in de App.config
         MySqlConnection conn;
@@ -32,11 +33,28 @@ namespace BarksAPI2._0
             {
                 Accountsnickname.Add(reader.GetString("AccountNickname"));
                 AccountsBio.Add(reader.GetString("AccountsBio"));
-
             }
 
             reader.Close();
             conn.Close();
+        }
+
+        public void sendBark()
+        {
+            conn = new MySqlConnection(connectionString);
+            conn.Open();
+
+            var cmd = new MySqlCommand("INSERT INTO `barks`(`id`, `idAccount`, `BarkDate`, `BarkTitel`, `BarkText`, `BarkIsActive`) VALUES ('[value-1]','1','23-1-23','"+titel+"','"+text+"','1');", conn);
+            var reader = cmd.ExecuteReader();
+
+
+            reader.Close();
+            conn.Close();
+        }
+
+        public void loadBark()
+        {
+
         }
     }
 }

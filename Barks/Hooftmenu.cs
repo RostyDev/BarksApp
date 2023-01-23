@@ -32,6 +32,19 @@ namespace Barks
             account.Profile();
             lbl_accountname.Text = account.Accountsnickname[0];
             rh_bio.Text= account.AccountsBio[0];
+
+        }
+
+        private void btn_verzend_Click(object sender, EventArgs e)
+        {
+            Accountpagina account = new Accountpagina();
+
+            account.titel = tb_titel.Text;
+            account.text = tb_text.Text;
+            account.sendBark();
+
+            tb_titel.Clear();
+            tb_text.Clear();    
         }
     }
 }
