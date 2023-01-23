@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BarksAPI2._0;
+using BarksAPI2;
 
 namespace Barks
 {
