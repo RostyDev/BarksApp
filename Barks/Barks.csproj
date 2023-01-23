@@ -86,6 +86,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AanmeldFormulier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AanmeldFormulier.Designer.cs">
+      <DependentUpon>AanmeldFormulier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="Hooftmenu.Designer.cs">
       <DependentUpon>Hooftmenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AanmeldFormulier.resx">
+      <DependentUpon>AanmeldFormulier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,6 +14,7 @@ namespace Barks
     public partial class InlogScreen : UserControl
     {
         bool RealWW = false;
+        //public bool Ingelogged = false;
 
         public InlogScreen()
         {
@@ -31,7 +32,7 @@ namespace Barks
             //Proberen in te loggen\\
             try
             {
-                InlogCheck.Login();
+                InlogCheck.GetAccount();
             }
             catch (Exception)              //Als het niet lukt\\
             {
@@ -51,7 +52,7 @@ namespace Barks
 
             //Het Hashen van het in gevulde WW en Checken of het het goede wachtwoord is\\
             InlogCheck.Hash(tb_UserWW.Text);
-            if (InlogCheck.HashWW == InlogCheck.AccountPassword)
+            if (InlogCheck.HashWW == InlogCheck.ActiveAccount.Password)
             {
                 RealWW = true;
             }
@@ -59,7 +60,9 @@ namespace Barks
             //Checken of de gebruiker kan inloggen\\
             if (tb_Email.Text == InlogCheck.EmailAdres && RealWW == true)
             {
-                this.Visible = false;
+                //Laad het hoofd scherm in\\
+                ((Form1)this.Parent).LoadHoofdScreen();
+                this.Dispose();
             }
             else                     //Als het fout gaat ligt het aan het wachtwoord\\
             {
@@ -69,11 +72,13 @@ namespace Barks
 
                 tb_UserWW.Text = "";
             }
+
         }
 
         private void lb_NoAccount_Click(object sender, EventArgs e)
         {
-
+            ((Form1)this.Parent).LoadAanmeldForm();
+            ((Form1)this.Parent).Controls.Remove(this);
         }
     }
 }
