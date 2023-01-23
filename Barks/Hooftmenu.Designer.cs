@@ -42,6 +42,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.lbl_accountname = new System.Windows.Forms.Label();
+            this.btn_verzend = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -49,9 +51,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(338, 671);
+            this.textBox1.Location = new System.Drawing.Point(320, 671);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(428, 31);
+            this.textBox1.Size = new System.Drawing.Size(401, 31);
             this.textBox1.TabIndex = 0;
             // 
             // rh_bio
@@ -191,11 +193,31 @@
             this.lbl_accountname.TabIndex = 13;
             this.lbl_accountname.Text = "FarmerFan69";
             // 
+            // btn_verzend
+            // 
+            this.btn_verzend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_verzend.Location = new System.Drawing.Point(728, 671);
+            this.btn_verzend.Name = "btn_verzend";
+            this.btn_verzend.Size = new System.Drawing.Size(44, 31);
+            this.btn_verzend.TabIndex = 14;
+            this.btn_verzend.Text = ">";
+            this.btn_verzend.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(320, 634);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(401, 31);
+            this.textBox2.TabIndex = 15;
+            // 
             // Hooftmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btn_verzend);
             this.Controls.Add(this.lbl_accountname);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -236,5 +258,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lbl_accountname;
+        private System.Windows.Forms.Button btn_verzend;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
