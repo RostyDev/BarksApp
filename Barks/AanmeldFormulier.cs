@@ -22,5 +22,10 @@ namespace Barks
             this.Visible = false;
             
         }
+
+        private void btn_Aanmelden_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

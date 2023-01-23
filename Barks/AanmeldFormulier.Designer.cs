@@ -66,6 +66,7 @@
             this.btn_Aanmelden.TabIndex = 10;
             this.btn_Aanmelden.Text = "aanmelden";
             this.btn_Aanmelden.UseVisualStyleBackColor = false;
+            this.btn_Aanmelden.Click += new System.EventHandler(this.btn_Aanmelden_Click);
             // 
             // panel3
             // 

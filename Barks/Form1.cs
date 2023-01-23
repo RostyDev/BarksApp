@@ -13,6 +13,9 @@ namespace Barks
 {
     public partial class Form1 : Form
     {
+        InlogScreen Inloggen = new InlogScreen();
+        Hooftmenu HooftmenuScreen = new Hooftmenu();
+
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +23,8 @@ namespace Barks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Controls.Add(Inloggen);
+            Inloggen.Dock = DockStyle.Fill;
         }
 
         private void btn_CloseForm_Click(object sender, EventArgs e)
@@ -33,9 +37,10 @@ namespace Barks
             WindowState = FormWindowState.Maximized;
         }
 
-        private void inlogScreen2_Load(object sender, EventArgs e)
+        public void LoadHoofdScreen()
         {
-            
+            this.Controls.Add(HooftmenuScreen);
+            HooftmenuScreen.Dock = DockStyle.Fill;
         }
     }
 }
