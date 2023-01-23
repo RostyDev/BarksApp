@@ -102,24 +102,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Barks";
             // 
-            // 
-            this.inlogScreen2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.inlogScreen2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inlogScreen2.Location = new System.Drawing.Point(0, 84);
-            this.inlogScreen2.Name = "inlogScreen2";
-            this.ClientSize = new System.Drawing.Size(1363, 878);
-            this.inlogScreen2.TabIndex = 2;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1022, 713);
-            this.Controls.Add(this.inlogScreen2);
+            this.ClientSize = new System.Drawing.Size(1363, 878);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.hooftmenu1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
