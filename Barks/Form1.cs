@@ -15,6 +15,7 @@ namespace Barks
     {
         InlogScreen Inloggen = new InlogScreen();
         Hooftmenu HooftmenuScreen = new Hooftmenu();
+        AanmeldFormulier AanmeldForm = new AanmeldFormulier();
 
         public Form1()
         {
@@ -23,8 +24,7 @@ namespace Barks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Controls.Add(Inloggen);
-            Inloggen.Dock = DockStyle.Fill;
+            LoadInlogForm();
         }
 
         private void btn_CloseForm_Click(object sender, EventArgs e)
@@ -34,13 +34,25 @@ namespace Barks
 
         private void btn_FullScreen_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+            //WindowState = FormWindowState.Maximized;
         }
 
         public void LoadHoofdScreen()
         {
             this.Controls.Add(HooftmenuScreen);
             HooftmenuScreen.Dock = DockStyle.Fill;
+        }
+
+        public void LoadAanmeldForm()
+        {
+            this.Controls.Add(AanmeldForm);
+            AanmeldForm.Dock = DockStyle.Fill;
+        }
+
+        public void LoadInlogForm()
+        {
+            this.Controls.Add(Inloggen);
+            Inloggen.Dock = DockStyle.Fill;
         }
     }
 }

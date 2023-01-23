@@ -32,7 +32,7 @@ namespace Barks
             //Proberen in te loggen\\
             try
             {
-                InlogCheck.Login();
+                InlogCheck.GetAccount();
             }
             catch (Exception)              //Als het niet lukt\\
             {
@@ -52,7 +52,7 @@ namespace Barks
 
             //Het Hashen van het in gevulde WW en Checken of het het goede wachtwoord is\\
             InlogCheck.Hash(tb_UserWW.Text);
-            if (InlogCheck.HashWW == InlogCheck.AccountPassword)
+            if (InlogCheck.HashWW == InlogCheck.ActiveAccount.Password)
             {
                 RealWW = true;
             }
@@ -77,7 +77,8 @@ namespace Barks
 
         private void lb_NoAccount_Click(object sender, EventArgs e)
         {
-
+            ((Form1)this.Parent).LoadAanmeldForm();
+            ((Form1)this.Parent).Controls.Remove(this);
         }
     }
 }

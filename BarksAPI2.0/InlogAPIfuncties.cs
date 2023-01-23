@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,8 @@ namespace BarksAPI2._0
     {
         public string EmailAdres { get; set; }
         public int HashWW { get; set;  }
-        public int AccountPassword { get; set; }
+
+        public AccountData ActiveAccount = new AccountData();
 
         MySqlConnection Conn;
 
@@ -28,16 +30,24 @@ namespace BarksAPI2._0
             Conn.Open();
         }
 
-        public void Login()
+        public void GetAccount()
         {
             OpenConn();
 
-            var cmd = new MySqlCommand("SELECT Emailadress, AccountWW FROM accounts WHERE Emailadress LIKE '" + EmailAdres + "'", Conn);
+            var cmd = new MySqlCommand("SELECT idAccounts, AccountNickname, Emailadress, AccountRealname, AccountWW, AccountsBio, AccountAge, Adres, Postcode FROM accounts WHERE Emailadress LIKE '" + EmailAdres + "'", Conn);
             var reader = cmd.ExecuteReader();
 
             while (reader.Read())
             {
-                AccountPassword = reader.GetInt32("AccountWW");
+                ActiveAccount.idAccounts = reader.GetInt32("idAccounts");
+                ActiveAccount.AccountNickname = reader.GetString("AccountNickname");
+                ActiveAccount.Emailadress = reader.GetString("Emailadress");
+                ActiveAccount.AccountRealname = reader.GetString("AccountRealname");
+                ActiveAccount.Password = reader.GetInt32("AccountWW");
+                ActiveAccount.AccountsBio = reader.GetString("AccountsBio");
+                ActiveAccount.AccountAge = reader.GetInt32("AccountAge");
+                ActiveAccount.Adres = reader.GetString("Adres");
+                ActiveAccount.Postcode = reader.GetString("Postcode");
             }
 
             reader.Close();
