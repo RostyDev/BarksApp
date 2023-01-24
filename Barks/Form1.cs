@@ -32,15 +32,12 @@ namespace Barks
             Application.Exit();
         }
 
-        private void btn_FullScreen_Click(object sender, EventArgs e)
-        {
-            //WindowState = FormWindowState.Maximized;
-        }
-
         public void LoadHoofdScreen()
         {
             this.Controls.Add(HooftmenuScreen);
             HooftmenuScreen.Dock = DockStyle.Fill;
+
+            btn_Uitlog.Visible = true;
         }
 
         public void LoadAanmeldForm()
@@ -53,6 +50,17 @@ namespace Barks
         {
             this.Controls.Add(Inloggen);
             Inloggen.Dock = DockStyle.Fill;
+
+            if (this.Controls.Contains(HooftmenuScreen))
+            {
+                this.Controls.Remove(HooftmenuScreen);
+            }
+        }
+
+        private void btn_Uitlog_Click(object sender, EventArgs e)
+        {
+            LoadInlogForm();
+            btn_Uitlog.Visible = false;
         }
     }
 }

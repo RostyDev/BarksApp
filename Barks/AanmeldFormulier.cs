@@ -20,7 +20,11 @@ namespace Barks
         private void lb_YesAccount_Click(object sender, EventArgs e)
         {
             ((Form1)this.Parent).LoadInlogForm();
-            ((Form1)this.Parent).Controls.Remove(this);
+
+            if (((Form1)this.Parent).Controls.Contains(this))
+            {
+                ((Form1)this.Parent).Controls.Remove(this);
+            }
         }
 
         private void btn_Aanmelden_Click(object sender, EventArgs e)

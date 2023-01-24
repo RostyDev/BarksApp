@@ -14,7 +14,10 @@ namespace Barks
     public partial class InlogScreen : UserControl
     {
         bool RealWW = false;
-        //public bool Ingelogged = false;
+
+        public static string AccountEmail;
+
+        public static InlogAPIfuncties InlogCheck = new InlogAPIfuncties();
 
         public InlogScreen()
         {
@@ -25,9 +28,8 @@ namespace Barks
         {
             tb_Email.Text.ToLower();
 
-            InlogAPIfuncties InlogCheck = new InlogAPIfuncties();
-
             InlogCheck.EmailAdres = tb_Email.Text;
+            AccountEmail = tb_Email.Text;
 
             //Proberen in te loggen\\
             try
@@ -62,7 +64,11 @@ namespace Barks
             {
                 //Laad het hoofd scherm in\\
                 ((Form1)this.Parent).LoadHoofdScreen();
-                this.Dispose();
+
+                tb_Email.Text = "";
+                tb_UserWW.Text = "";
+
+                ((Form1)this.Parent).Controls.Remove(this);
             }
             else                     //Als het fout gaat ligt het aan het wachtwoord\\
             {
@@ -72,7 +78,6 @@ namespace Barks
 
                 tb_UserWW.Text = "";
             }
-
         }
 
         private void lb_NoAccount_Click(object sender, EventArgs e)
