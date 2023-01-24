@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BarksAPI2._0
+namespace BarksAPI2
 {
     public class AccountData
     {

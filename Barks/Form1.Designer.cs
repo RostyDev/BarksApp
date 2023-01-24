@@ -126,7 +126,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CloseForm;
         private System.Windows.Forms.Panel panel2;
-        private InlogScreen inlogScreen1;
+        //private InlogScreen inlogScreen1;
         private System.Windows.Forms.Button btn_FullScreen;
     }
 }
