@@ -28,6 +28,11 @@ namespace Barks
 
         private void Hooftmenu_Load(object sender, EventArgs e)
         {
+            UpdatePage();
+        }
+
+        public void UpdatePage()
+        {
             lbl_accountname.Text = InlogScreen.InlogCheck.ActiveAccount.AccountNickname;
             rh_bio.Text = InlogScreen.InlogCheck.ActiveAccount.AccountsBio;
         }

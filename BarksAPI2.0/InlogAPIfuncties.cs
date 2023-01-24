@@ -16,9 +16,12 @@ namespace BarksAPI2._0
         public string EmailAdres { get; set; }
         public int HashWW { get; set;  }
 
-        public AccountData ActiveAccount = new AccountData();
+        public List<string> Emails = new List<string>();
 
-        MySqlConnection Conn;
+        public AccountData ActiveAccount = new AccountData();
+        public AccountData NieuwAccount = new AccountData();
+
+        private MySqlConnection Conn;
 
         private void OpenConn()
         {
@@ -52,6 +55,35 @@ namespace BarksAPI2._0
 
             reader.Close();
 
+            Conn.Close();
+        }
+
+        public void AddAccount()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("INSERT INTO accounts(AccountNickname, Emailadress, AccountRealname, AccountWW, AccountAge, Adres, Postcode)" +
+                " VALUES ('"+ NieuwAccount.AccountNickname +"','"+ NieuwAccount.Emailadress +"','"+ NieuwAccount.AccountRealname +"','"+ NieuwAccount.Password +"'," +
+                "'"+ NieuwAccount.AccountAge +"','"+ NieuwAccount.Adres +"','"+ NieuwAccount.Postcode +"')", Conn);
+            var reader = cmd.ExecuteReader();
+
+            reader.Close();
+            Conn.Close();
+        }
+
+        public void CheckEmails()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("SELECT Emailadress FROM accounts;", Conn);
+            var reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Emails.Add(reader.GetString("Emailadress"));
+            }
+
+            reader.Close();
             Conn.Close();
         }
 

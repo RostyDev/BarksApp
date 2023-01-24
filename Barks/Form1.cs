@@ -14,7 +14,7 @@ namespace Barks
     public partial class Form1 : Form
     {
         InlogScreen Inloggen = new InlogScreen();
-        Hooftmenu HooftmenuScreen = new Hooftmenu();
+        Hooftmenu HoofdmenuScreen = new Hooftmenu();
         AanmeldFormulier AanmeldForm = new AanmeldFormulier();
 
         public Form1()
@@ -34,8 +34,10 @@ namespace Barks
 
         public void LoadHoofdScreen()
         {
-            this.Controls.Add(HooftmenuScreen);
-            HooftmenuScreen.Dock = DockStyle.Fill;
+            this.Controls.Add(HoofdmenuScreen);
+            HoofdmenuScreen.Dock = DockStyle.Fill;
+
+            HoofdmenuScreen.UpdatePage();
 
             btn_Uitlog.Visible = true;
         }
@@ -51,9 +53,9 @@ namespace Barks
             this.Controls.Add(Inloggen);
             Inloggen.Dock = DockStyle.Fill;
 
-            if (this.Controls.Contains(HooftmenuScreen))
+            if (this.Controls.Contains(HoofdmenuScreen))
             {
-                this.Controls.Remove(HooftmenuScreen);
+                this.Controls.Remove(HoofdmenuScreen);
             }
         }
 

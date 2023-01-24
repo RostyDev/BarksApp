@@ -118,6 +118,9 @@
     <Compile Include="Hooftmenu.Designer.cs">
       <DependentUpon>Hooftmenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AanmeldFormulier.resx">
+      <DependentUpon>AanmeldFormulier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
