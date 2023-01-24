@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace BarksAPI2._0
+namespace BarksAPI2
 {
     public class Accountpagina
     {

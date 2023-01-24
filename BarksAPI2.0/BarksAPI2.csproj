@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountData.cs" />
+    <Compile Include="Accountpagina.cs" />
     <Compile Include="InlogAPIfuncties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
