@@ -98,6 +98,12 @@
     <Compile Include="AanmeldFormulier.Designer.cs">
       <DependentUpon>AanmeldFormulier.cs</DependentUpon>
     </Compile>
+    <Compile Include="barkspagine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="barkspagine.Designer.cs">
+      <DependentUpon>barkspagine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="AanmeldFormulier.resx">
       <DependentUpon>AanmeldFormulier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barkspagine.resx">
+      <DependentUpon>barkspagine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

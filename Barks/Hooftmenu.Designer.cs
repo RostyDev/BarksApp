@@ -41,10 +41,10 @@
             this.btn_verzend = new System.Windows.Forms.Button();
             this.tb_titel = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bark1 = new Barks.Bark();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.bark1 = new Barks.Bark();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -184,21 +184,13 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(452, 346);
             this.flowLayoutPanel1.TabIndex = 16;
             // 
-            // bark1
-            // 
-            this.bark1.BackColor = System.Drawing.Color.Gray;
-            this.bark1.Location = new System.Drawing.Point(3, 3);
-            this.bark1.Name = "bark1";
-            this.bark1.Size = new System.Drawing.Size(449, 245);
-            this.bark1.TabIndex = 0;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Barks.Properties.Resources.geen_profielfoto_man_silhouet_pasfoto_anoniem_600x600_1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(40, 82);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(193, 169);
+            this.pictureBox2.Size = new System.Drawing.Size(189, 169);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -221,6 +213,14 @@
             this.button5.Text = "Update Bio";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // bark1
+            // 
+            this.bark1.BackColor = System.Drawing.Color.Gray;
+            this.bark1.Location = new System.Drawing.Point(3, 3);
+            this.bark1.Name = "bark1";
+            this.bark1.Size = new System.Drawing.Size(449, 245);
+            this.bark1.TabIndex = 0;
             // 
             // Hooftmenu
             // 
