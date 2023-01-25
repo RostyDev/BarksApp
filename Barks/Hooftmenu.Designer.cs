@@ -41,10 +41,8 @@
             this.btn_verzend = new System.Windows.Forms.Button();
             this.tb_titel = new System.Windows.Forms.TextBox();
             this.flp_EigenBarks = new System.Windows.Forms.FlowLayoutPanel();
-            this.bark1 = new Barks.Bark();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,8 +64,8 @@
             this.rh_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rh_bio.Location = new System.Drawing.Point(53, 347);
             this.rh_bio.Margin = new System.Windows.Forms.Padding(4);
-            this.rh_bio.Size = new System.Drawing.Size(274, 346);
-            this.rh_bio.Size = new System.Drawing.Size(274, 420);
+            this.rh_bio.Name = "rh_bio";
+            this.rh_bio.Size = new System.Drawing.Size(364, 516);
             this.rh_bio.TabIndex = 1;
             this.rh_bio.Text = "";
             // 
@@ -192,6 +190,7 @@
             this.tb_titel.Size = new System.Drawing.Size(533, 37);
             this.tb_titel.TabIndex = 15;
             this.tb_titel.Text = "Titel:";
+            // 
             // flp_EigenBarks
             // 
             this.flp_EigenBarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -202,15 +201,14 @@
             this.flp_EigenBarks.Size = new System.Drawing.Size(603, 392);
             this.flp_EigenBarks.TabIndex = 16;
             // 
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Barks.Properties.Resources.geen_profielfoto_man_silhouet_pasfoto_anoniem_600x600_1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(53, 101);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Size = new System.Drawing.Size(189, 169);
-            this.pictureBox2.Size = new System.Drawing.Size(193, 169);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 208);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -224,31 +222,12 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(40, 634);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(274, 68);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Update Bio";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // bark1
-            // 
-            this.bark1.BackColor = System.Drawing.Color.Gray;
-            this.bark1.Location = new System.Drawing.Point(3, 3);
-            this.bark1.Name = "bark1";
-            this.bark1.Size = new System.Drawing.Size(449, 245);
-            this.bark1.TabIndex = 0;
-            // 
             // Hooftmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.flp_EigenBarks);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tb_titel);
             this.Controls.Add(this.btn_verzend);
             this.Controls.Add(this.lbl_accountname);
@@ -289,7 +268,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lbl_accountname;
         private System.Windows.Forms.Button btn_verzend;
+        private System.Windows.Forms.TextBox tb_titel;
         public System.Windows.Forms.FlowLayoutPanel flp_EigenBarks;
-        private Bark bark1;
     }
 }
