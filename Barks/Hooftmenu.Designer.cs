@@ -44,6 +44,7 @@
             this.bark1 = new Barks.Bark();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,7 +63,7 @@
             this.rh_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rh_bio.Location = new System.Drawing.Point(40, 282);
             this.rh_bio.Name = "rh_bio";
-            this.rh_bio.Size = new System.Drawing.Size(274, 420);
+            this.rh_bio.Size = new System.Drawing.Size(274, 346);
             this.rh_bio.TabIndex = 1;
             this.rh_bio.Text = "";
             // 
@@ -210,11 +211,23 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(40, 634);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(274, 68);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Update Bio";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Hooftmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tb_titel);
             this.Controls.Add(this.btn_verzend);
@@ -259,5 +272,6 @@
         private System.Windows.Forms.TextBox tb_titel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Bark bark1;
+        private System.Windows.Forms.Button button5;
     }
 }

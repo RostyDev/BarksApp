@@ -17,6 +17,10 @@ namespace BarksAPI2
         public string titel;
         public string text;
 
+        //voor bio update functie
+        public string Nickname;
+        public string Bio;
+
         //connectie string, zit in de App.config
         MySqlConnection conn;
         string connectionString = ConfigurationManager.AppSettings["Connectie"];
@@ -51,10 +55,17 @@ namespace BarksAPI2
             reader.Close();
             conn.Close();
         }
-
-        public void loadBark()
+        
+        public void bioupdate()
         {
+            conn = new MySqlConnection(connectionString);
+            conn.Open();
 
+            var cmd = new MySqlCommand("UPDATE `accounts` SET `AccountsBio`='"+Bio+"' WHERE `AccountNickname` LIKE '"+Nickname+"';", conn);
+            var reader = cmd.ExecuteReader();
+
+            reader.Close();
+            conn.Close();
         }
     }
 }
