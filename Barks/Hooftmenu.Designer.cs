@@ -40,13 +40,13 @@
             this.lbl_accountname = new System.Windows.Forms.Label();
             this.btn_verzend = new System.Windows.Forms.Button();
             this.tb_titel = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.bark1 = new Barks.Bark();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_text
@@ -152,9 +152,9 @@
             this.lbl_accountname.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_accountname.Location = new System.Drawing.Point(267, 119);
             this.lbl_accountname.Name = "lbl_accountname";
-            this.lbl_accountname.Size = new System.Drawing.Size(238, 39);
+            this.lbl_accountname.Size = new System.Drawing.Size(175, 39);
             this.lbl_accountname.TabIndex = 13;
-            this.lbl_accountname.Text = "FarmerFan69";
+            this.lbl_accountname.Text = "nickname";
             // 
             // btn_verzend
             // 
@@ -175,25 +175,6 @@
             this.tb_titel.Size = new System.Drawing.Size(401, 31);
             this.tb_titel.TabIndex = 15;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Barks.Properties.Resources.Schermafbeelding_2022_11_10_164150;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 82);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(193, 169);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 161);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1777, 60);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.bark1);
@@ -209,6 +190,25 @@
             this.bark1.Name = "bark1";
             this.bark1.Size = new System.Drawing.Size(449, 245);
             this.bark1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Barks.Properties.Resources.geen_profielfoto_man_silhouet_pasfoto_anoniem_600x600_1;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(40, 82);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(193, 169);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 161);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1777, 60);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Hooftmenu
             // 
@@ -233,9 +233,9 @@
             this.Name = "Hooftmenu";
             this.Size = new System.Drawing.Size(1015, 709);
             this.Load += new System.EventHandler(this.Hooftmenu_Load);
+            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
