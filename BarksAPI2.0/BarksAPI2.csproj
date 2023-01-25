@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30210CA6-5796-47AE-B235-F93804DD2D3C}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Barks</RootNamespace>
-    <AssemblyName>Barks</AssemblyName>
+    <ProjectGuid>{5653693D-8D22-4C54-9322-B1CB86412C79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarksAPI2._0</RootNamespace>
+    <AssemblyName>BarksAPI2.0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -55,8 +53,6 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.ComponentModel" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
@@ -76,107 +72,23 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bark.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Bark.Designer.cs">
-      <DependentUpon>Bark.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AanmeldFormulier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AanmeldFormulier.Designer.cs">
-      <DependentUpon>AanmeldFormulier.cs</DependentUpon>
-    </Compile>
-    <Compile Include="barkspagine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="barkspagine.Designer.cs">
-      <DependentUpon>barkspagine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InlogScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InlogScreen.Designer.cs">
-      <DependentUpon>InlogScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="AccountData.cs" />
+    <Compile Include="Accountpagina.cs" />
+    <Compile Include="BarkData.cs" />
+    <Compile Include="BarksAPIfuncties.cs" />
+    <Compile Include="InlogAPIfuncties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Hooftmenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Hooftmenu.Designer.cs">
-      <DependentUpon>Hooftmenu.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AanmeldFormulier.resx">
-      <DependentUpon>AanmeldFormulier.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bark.resx">
-      <DependentUpon>Bark.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="barkspagine.resx">
-      <DependentUpon>barkspagine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InlogScreen.resx">
-      <DependentUpon>InlogScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="Hooftmenu.resx">
-      <DependentUpon>Hooftmenu.cs</DependentUpon>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Schermafbeelding 2022-11-10 164150.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BarksAPI2.0\BarksAPI2.csproj">
-      <Project>{5653693d-8d22-4c54-9322-b1cb86412c79}</Project>
-      <Name>BarksAPI2</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\geen-profielfoto-man-silhouet-pasfoto-anoniem-600x600-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
