@@ -15,7 +15,6 @@ namespace Barks
 {
     public partial class Hooftmenu : UserControl
     {
-
         public Hooftmenu()
         {
             InitializeComponent();
@@ -47,6 +46,18 @@ namespace Barks
 
             tb_titel.Clear();
             tb_text.Clear();    
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Accountpagina account = new Accountpagina();
+
+            account.Nickname = lbl_accountname.Text;
+            account.Bio = rh_bio.Text;
+
+            account.bioupdate();
+
+            MessageBox.Show("Je bio is vernieuwd!");
         }
     }
 }
