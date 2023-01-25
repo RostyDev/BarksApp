@@ -35,28 +35,32 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.flowLayoutPanel1.Controls.Add(this.bark1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(119, 19);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(349, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(733, 606);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(621, 701);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // bark1
             // 
             this.bark1.BackColor = System.Drawing.Color.Gray;
-            this.bark1.Location = new System.Drawing.Point(3, 3);
+            this.bark1.Location = new System.Drawing.Point(5, 5);
+            this.bark1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bark1.Name = "bark1";
-            this.bark1.Size = new System.Drawing.Size(427, 242);
+            this.bark1.Size = new System.Drawing.Size(616, 307);
             this.bark1.TabIndex = 0;
             // 
             // barkspagine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "barkspagine";
-            this.Size = new System.Drawing.Size(1023, 645);
+            this.Size = new System.Drawing.Size(1339, 701);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
