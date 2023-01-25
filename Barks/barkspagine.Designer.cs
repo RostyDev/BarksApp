@@ -28,47 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bark1 = new Barks.Bark();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flp_BarksPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flp_BarksPanel
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.flowLayoutPanel1.Controls.Add(this.bark1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(349, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(621, 701);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // bark1
-            // 
-            this.bark1.BackColor = System.Drawing.Color.Gray;
-            this.bark1.Location = new System.Drawing.Point(5, 5);
-            this.bark1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bark1.Name = "bark1";
-            this.bark1.Size = new System.Drawing.Size(616, 307);
-            this.bark1.TabIndex = 0;
+            this.flp_BarksPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.flp_BarksPanel.BackColor = System.Drawing.Color.Gray;
+            this.flp_BarksPanel.Location = new System.Drawing.Point(349, 0);
+            this.flp_BarksPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.flp_BarksPanel.Name = "flp_BarksPanel";
+            this.flp_BarksPanel.Size = new System.Drawing.Size(621, 701);
+            this.flp_BarksPanel.TabIndex = 0;
             // 
             // barkspagine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.flp_BarksPanel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "barkspagine";
             this.Size = new System.Drawing.Size(1339, 701);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Bark bark1;
+        private System.Windows.Forms.FlowLayoutPanel flp_BarksPanel;
     }
 }

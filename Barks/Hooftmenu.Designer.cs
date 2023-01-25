@@ -62,12 +62,12 @@
             // 
             // rh_bio
             // 
-            this.rh_bio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rh_bio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rh_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rh_bio.Location = new System.Drawing.Point(53, 347);
+            this.rh_bio.Location = new System.Drawing.Point(53, 348);
             this.rh_bio.Margin = new System.Windows.Forms.Padding(4);
             this.rh_bio.Name = "rh_bio";
-            this.rh_bio.Size = new System.Drawing.Size(364, 437);
+            this.rh_bio.Size = new System.Drawing.Size(364, 436);
             this.rh_bio.TabIndex = 1;
             this.rh_bio.Text = "";
             // 
