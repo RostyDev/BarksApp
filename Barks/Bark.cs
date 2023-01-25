@@ -12,6 +12,10 @@ namespace Barks
 {
     public partial class Bark : UserControl
     {
+        public int id;
+        public int idAccount;
+        public int IsActive;
+
         public Bark()
         {
             InitializeComponent();

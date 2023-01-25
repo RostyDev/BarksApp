@@ -11,6 +11,7 @@ namespace BarksAPI2._0
     public class BarksAPIfuncties
     {
         public List<BarkData> PersoonlijkeBarks = new List<BarkData>();
+        public List<BarkData> AllBarks = new List<BarkData>();
 
         public AccountData ActiveAccount = new AccountData();
         public BarkData NewBark = new BarkData();
@@ -64,6 +65,33 @@ namespace BarksAPI2._0
                 TijdelijkeBark.BarkActive = reader.GetUInt16("BarkIsActive");
 
                 PersoonlijkeBarks.Add(TijdelijkeBark);
+            }
+
+            reader.Close();
+            Conn.Close();
+        }
+
+        public void GetAllBarks()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("SELECT id, idAccount, accounts.AccountNickname, BarkDate, BarkTitel, BarkText, BarkIsActive " +
+                "FROM barks INNER JOIN accounts ON barks.idAccount = accounts.idAccounts;", Conn);
+            var reader = cmd.ExecuteReader();
+
+            while (reader.Read()) 
+            {
+                BarkData TijdelijkeBark = new BarkData();
+
+                TijdelijkeBark.id = reader.GetInt32("id");
+                TijdelijkeBark.Accountid = reader.GetInt32("idAccount");
+                TijdelijkeBark.AccountNickname = reader.GetString("AccountNickname");
+                TijdelijkeBark.BarkDate = DateTime.Parse(reader.GetString("BarkDate"));
+                TijdelijkeBark.BarkTitel = reader.GetString("BarkTitel");
+                TijdelijkeBark.BarkText = reader.GetString("barkText");
+                TijdelijkeBark.BarkActive = reader.GetUInt16("BarkIsActive");
+
+                AllBarks.Add(TijdelijkeBark);
             }
 
             reader.Close();

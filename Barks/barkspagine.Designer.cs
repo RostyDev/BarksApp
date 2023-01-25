@@ -34,22 +34,22 @@
             // flp_BarksPanel
             // 
             this.flp_BarksPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.flp_BarksPanel.AutoScroll = true;
             this.flp_BarksPanel.BackColor = System.Drawing.Color.Gray;
-            this.flp_BarksPanel.Location = new System.Drawing.Point(349, 0);
-            this.flp_BarksPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.flp_BarksPanel.Location = new System.Drawing.Point(262, 88);
             this.flp_BarksPanel.Name = "flp_BarksPanel";
-            this.flp_BarksPanel.Size = new System.Drawing.Size(621, 701);
+            this.flp_BarksPanel.Size = new System.Drawing.Size(466, 482);
             this.flp_BarksPanel.TabIndex = 0;
             // 
             // barkspagine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.Controls.Add(this.flp_BarksPanel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "barkspagine";
-            this.Size = new System.Drawing.Size(1339, 701);
+            this.Size = new System.Drawing.Size(1004, 570);
+            this.Load += new System.EventHandler(this.barkspagine_Load);
             this.ResumeLayout(false);
 
         }

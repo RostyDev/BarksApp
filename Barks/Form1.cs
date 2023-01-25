@@ -16,6 +16,7 @@ namespace Barks
         InlogScreen Inloggen = new InlogScreen();
         Hooftmenu HoofdmenuScreen = new Hooftmenu();
         AanmeldFormulier AanmeldForm = new AanmeldFormulier();
+        barkspagine BarksPagina = new barkspagine();
 
         public Form1()
         {
@@ -58,6 +59,16 @@ namespace Barks
             {
                 this.Controls.Remove(HoofdmenuScreen);
             }
+            else if (this.Controls.Contains(BarksPagina))
+            {
+                this.Controls.Remove(BarksPagina);
+            }
+        }
+
+        public void LoadBarksPage()
+        {
+            this.Controls.Add(BarksPagina);
+            BarksPagina.Dock = DockStyle.Fill;
         }
 
         private void btn_Uitlog_Click(object sender, EventArgs e)
@@ -68,7 +79,19 @@ namespace Barks
 
         private void lb_Logo_Click(object sender, EventArgs e)
         {
+            if (!this.Controls.Contains(Inloggen) || !this.Controls.Contains(AanmeldForm))
+            {
+                UnloadMainPages();
+                LoadHoofdScreen();
+            }
+        }
 
+        private void UnloadMainPages()
+        {
+            if (this.Controls.Contains(BarksPagina))
+            {
+                this.Controls.Remove(BarksPagina);
+            }
         }
     }
 }
