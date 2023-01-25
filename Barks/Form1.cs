@@ -64,5 +64,10 @@ namespace Barks
             LoadInlogForm();
             btn_Uitlog.Visible = false;
         }
+
+        private void lb_Logo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
