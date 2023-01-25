@@ -57,6 +57,10 @@ namespace BarksAPI2
         }
         
         public void bioupdate()
+        {
+
+        }
+
         public void loadBark()
         {
             conn = new MySqlConnection(connectionString);
