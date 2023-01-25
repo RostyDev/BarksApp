@@ -49,12 +49,15 @@
             // 
             // tb_text
             // 
+            this.tb_text.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tb_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_text.Location = new System.Drawing.Point(427, 826);
+            this.tb_text.Location = new System.Drawing.Point(427, 792);
             this.tb_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_text.Multiline = true;
             this.tb_text.Name = "tb_text";
-            this.tb_text.Size = new System.Drawing.Size(533, 37);
+            this.tb_text.Size = new System.Drawing.Size(533, 71);
             this.tb_text.TabIndex = 0;
+            this.tb_text.Text = "inhoud:";
             // 
             // rh_bio
             // 
@@ -166,6 +169,7 @@
             // 
             // btn_verzend
             // 
+            this.btn_verzend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_verzend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verzend.Location = new System.Drawing.Point(971, 826);
             this.btn_verzend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -178,19 +182,22 @@
             // 
             // tb_titel
             // 
+            this.tb_titel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tb_titel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_titel.Location = new System.Drawing.Point(427, 780);
+            this.tb_titel.Location = new System.Drawing.Point(425, 747);
             this.tb_titel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_titel.Name = "tb_titel";
             this.tb_titel.Size = new System.Drawing.Size(533, 37);
             this.tb_titel.TabIndex = 15;
+            this.tb_titel.Text = "Titel:";
             // 
             // flp_EigenBarks
             // 
+            this.flp_EigenBarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.flp_EigenBarks.Location = new System.Drawing.Point(427, 347);
             this.flp_EigenBarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flp_EigenBarks.Name = "flp_EigenBarks";
-            this.flp_EigenBarks.Size = new System.Drawing.Size(603, 426);
+            this.flp_EigenBarks.Size = new System.Drawing.Size(603, 392);
             this.flp_EigenBarks.TabIndex = 16;
             // 
             // pictureBox2

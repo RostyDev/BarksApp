@@ -15,6 +15,9 @@ namespace Barks
 {
     public partial class Hooftmenu : UserControl
     {
+        public static AccountData ActiveAccount = new AccountData();
+
+        BarksAPIfuncties BarkFuncties = new BarksAPIfuncties();
 
         public Hooftmenu()
         {
@@ -39,11 +42,14 @@ namespace Barks
 
         private void btn_verzend_Click(object sender, EventArgs e)
         {
-            //Accountpagina account = new Accountpagina();
+            BarkFuncties.ActiveAccount = ActiveAccount;
 
-            //account.titel = tb_titel.Text;
-            //account.text = tb_text.Text;
-            //account.sendBark();
+            BarkFuncties.NewBark.Accountid = BarkFuncties.ActiveAccount.idAccounts;
+            BarkFuncties.NewBark.BarkDate = DateTime.Now;
+            BarkFuncties.NewBark.BarkTitel = tb_titel.Text;
+            BarkFuncties.NewBark.BarkText = tb_text.Text;
+
+            BarkFuncties.PostBark();
 
             tb_titel.Clear();
             tb_text.Clear();    

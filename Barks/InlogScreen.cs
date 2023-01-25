@@ -62,6 +62,8 @@ namespace Barks
             //Checken of de gebruiker kan inloggen\\
             if (tb_Email.Text == InlogCheck.EmailAdres && RealWW == true)
             {
+                Hooftmenu.ActiveAccount = InlogCheck.ActiveAccount; 
+
                 //Laad het hoofd scherm in\\
                 ((Form1)this.Parent).LoadHoofdScreen();
 
