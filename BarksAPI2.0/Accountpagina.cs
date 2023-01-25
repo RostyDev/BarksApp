@@ -58,15 +58,10 @@ namespace BarksAPI2
         
         public void bioupdate()
         {
-
-        }
-
-        public void loadBark()
-        {
             conn = new MySqlConnection(connectionString);
             conn.Open();
 
-            var cmd = new MySqlCommand("UPDATE `accounts` SET `AccountsBio`='"+Bio+"' WHERE `AccountNickname` LIKE '"+Nickname+"';", conn);
+            var cmd = new MySqlCommand("UPDATE `accounts` SET `AccountsBio`='" + Bio + "' WHERE `AccountNickname` LIKE '" + Nickname + "';", conn);
             var reader = cmd.ExecuteReader();
 
             reader.Close();

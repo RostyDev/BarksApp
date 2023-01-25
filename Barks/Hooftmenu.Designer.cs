@@ -43,6 +43,7 @@
             this.flp_EigenBarks = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_updateBio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,11 +62,12 @@
             // 
             // rh_bio
             // 
+            this.rh_bio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.rh_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rh_bio.Location = new System.Drawing.Point(53, 347);
             this.rh_bio.Margin = new System.Windows.Forms.Padding(4);
             this.rh_bio.Name = "rh_bio";
-            this.rh_bio.Size = new System.Drawing.Size(364, 516);
+            this.rh_bio.Size = new System.Drawing.Size(364, 437);
             this.rh_bio.TabIndex = 1;
             this.rh_bio.Text = "";
             // 
@@ -222,11 +224,23 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_updateBio
+            // 
+            this.btn_updateBio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_updateBio.Location = new System.Drawing.Point(53, 791);
+            this.btn_updateBio.Name = "btn_updateBio";
+            this.btn_updateBio.Size = new System.Drawing.Size(364, 72);
+            this.btn_updateBio.TabIndex = 17;
+            this.btn_updateBio.Text = "Update Bio";
+            this.btn_updateBio.UseVisualStyleBackColor = true;
+            this.btn_updateBio.Click += new System.EventHandler(this.btn_updateBio_Click);
+            // 
             // Hooftmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.btn_updateBio);
             this.Controls.Add(this.flp_EigenBarks);
             this.Controls.Add(this.tb_titel);
             this.Controls.Add(this.btn_verzend);
@@ -270,5 +284,6 @@
         private System.Windows.Forms.Button btn_verzend;
         private System.Windows.Forms.TextBox tb_titel;
         public System.Windows.Forms.FlowLayoutPanel flp_EigenBarks;
+        private System.Windows.Forms.Button btn_updateBio;
     }
 }

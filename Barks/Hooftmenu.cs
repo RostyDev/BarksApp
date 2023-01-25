@@ -87,7 +87,7 @@ namespace Barks
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_updateBio_Click(object sender, EventArgs e)
         {
             Accountpagina account = new Accountpagina();
 
