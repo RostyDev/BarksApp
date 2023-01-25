@@ -163,5 +163,8 @@
       <Name>BarksAPI2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geen-profielfoto-man-silhouet-pasfoto-anoniem-600x600-1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

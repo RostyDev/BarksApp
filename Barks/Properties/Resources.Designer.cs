@@ -63,6 +63,16 @@ namespace Barks.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap geen_profielfoto_man_silhouet_pasfoto_anoniem_600x600_1 {
+            get {
+                object obj = ResourceManager.GetObject("geen-profielfoto-man-silhouet-pasfoto-anoniem-600x600-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Schermafbeelding_2022_11_10_164150 {
             get {
                 object obj = ResourceManager.GetObject("Schermafbeelding 2022-11-10 164150", resourceCulture);

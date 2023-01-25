@@ -121,4 +121,7 @@
   <data name="Schermafbeelding 2022-11-10 164150" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Schermafbeelding 2022-11-10 164150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="geen-profielfoto-man-silhouet-pasfoto-anoniem-600x600-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geen-profielfoto-man-silhouet-pasfoto-anoniem-600x600-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
