@@ -17,7 +17,11 @@ namespace Barks
 
         public static string AccountEmail;
 
+        List<Bark> Barks = new List<Bark>();
+
         public static InlogAPIfuncties InlogCheck = new InlogAPIfuncties();
+
+        BarksAPIfuncties BarkStartupFuncties = new BarksAPIfuncties();
 
         public InlogScreen()
         {
@@ -62,6 +66,8 @@ namespace Barks
             //Checken of de gebruiker kan inloggen\\
             if (tb_Email.Text == InlogCheck.EmailAdres && RealWW == true)
             {
+                Hooftmenu.ActiveAccount = InlogCheck.ActiveAccount;
+
                 //Laad het hoofd scherm in\\
                 ((Form1)this.Parent).LoadHoofdScreen();
 

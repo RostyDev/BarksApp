@@ -127,6 +127,9 @@
     <EmbeddedResource Include="AanmeldFormulier.resx">
       <DependentUpon>AanmeldFormulier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bark.resx">
+      <DependentUpon>Bark.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="barkspagine.resx">
       <DependentUpon>barkspagine.cs</DependentUpon>
     </EmbeddedResource>

@@ -15,6 +15,12 @@ namespace Barks
 {
     public partial class Hooftmenu : UserControl
     {
+        public static AccountData ActiveAccount = new AccountData();
+
+        List<Bark> Barks = new List<Bark>();
+
+        BarksAPIfuncties BarkFuncties = new BarksAPIfuncties();
+
         public Hooftmenu()
         {
             InitializeComponent();
@@ -38,14 +44,47 @@ namespace Barks
 
         private void btn_verzend_Click(object sender, EventArgs e)
         {
-            Accountpagina account = new Accountpagina();
+            flp_EigenBarks.Controls.Clear();
+            Barks.Clear();
 
-            account.titel = tb_titel.Text;
-            account.text = tb_text.Text;
-            account.sendBark();
+            BarkFuncties.ActiveAccount = ActiveAccount;
+
+            BarkFuncties.NewBark.Accountid = BarkFuncties.ActiveAccount.idAccounts;
+            BarkFuncties.NewBark.BarkDate = DateTime.Now;
+            BarkFuncties.NewBark.BarkTitel = tb_titel.Text;
+            BarkFuncties.NewBark.BarkText = tb_text.Text;
+
+            BarkFuncties.PostBark();
 
             tb_titel.Clear();
-            tb_text.Clear();    
+            tb_text.Clear(); 
+
+            LoadPersonalBarks();
+        }
+
+        public void LoadPersonalBarks()
+        {
+            BarkFuncties.ActiveAccount = ActiveAccount;
+
+            BarkFuncties.GetPersonalBarks();
+
+            foreach (var bark in BarkFuncties.PersoonlijkeBarks)
+            {
+                Bark Tijdelijk = new Bark();
+
+                Tijdelijk.lb_Accountname.Text = bark.AccountNickname;
+                Tijdelijk.lb_titel.Text = bark.BarkTitel;
+                Tijdelijk.lbl_datum.Text = bark.BarkDate.ToString();
+                Tijdelijk.rhtb_text.Text = bark.BarkText;
+                Tijdelijk.Name = "BarkControl " + bark.id;
+
+                Barks.Add(Tijdelijk);
+            }
+
+            foreach (var BarkControl in Barks)
+            {
+                flp_EigenBarks.Controls.Add(BarkControl);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
