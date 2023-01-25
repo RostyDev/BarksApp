@@ -42,7 +42,7 @@
             this.lb_titel.AutoSize = true;
             this.lb_titel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titel.ForeColor = System.Drawing.Color.Yellow;
-            this.lb_titel.Location = new System.Drawing.Point(4, 55);
+            this.lb_titel.Location = new System.Drawing.Point(9, 57);
             this.lb_titel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_titel.Name = "lb_titel";
             this.lb_titel.Size = new System.Drawing.Size(62, 31);
@@ -54,7 +54,7 @@
             this.lbl_datum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_datum.AutoSize = true;
             this.lbl_datum.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_datum.Location = new System.Drawing.Point(464, 0);
+            this.lbl_datum.Location = new System.Drawing.Point(433, 0);
             this.lbl_datum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_datum.Name = "lbl_datum";
             this.lbl_datum.Size = new System.Drawing.Size(44, 16);
