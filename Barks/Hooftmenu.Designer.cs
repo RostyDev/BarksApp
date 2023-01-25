@@ -52,7 +52,7 @@
             this.tb_text.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tb_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_text.Location = new System.Drawing.Point(427, 792);
-            this.tb_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_text.Margin = new System.Windows.Forms.Padding(4);
             this.tb_text.Multiline = true;
             this.tb_text.Name = "tb_text";
             this.tb_text.Size = new System.Drawing.Size(533, 71);
@@ -63,7 +63,7 @@
             // 
             this.rh_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rh_bio.Location = new System.Drawing.Point(53, 347);
-            this.rh_bio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rh_bio.Margin = new System.Windows.Forms.Padding(4);
             this.rh_bio.Name = "rh_bio";
             this.rh_bio.Size = new System.Drawing.Size(364, 516);
             this.rh_bio.TabIndex = 1;
@@ -85,7 +85,7 @@
             // richTextBox3
             // 
             this.richTextBox3.Location = new System.Drawing.Point(1037, 347);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(289, 522);
             this.richTextBox3.TabIndex = 6;
@@ -109,7 +109,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(365, 210);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 49);
             this.button1.TabIndex = 9;
@@ -122,7 +122,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(605, 210);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 49);
             this.button2.TabIndex = 10;
@@ -135,7 +135,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(860, 210);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 49);
             this.button3.TabIndex = 11;
@@ -148,7 +148,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(1107, 210);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 49);
             this.button4.TabIndex = 12;
@@ -172,7 +172,7 @@
             this.btn_verzend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_verzend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verzend.Location = new System.Drawing.Point(971, 826);
-            this.btn_verzend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_verzend.Margin = new System.Windows.Forms.Padding(4);
             this.btn_verzend.Name = "btn_verzend";
             this.btn_verzend.Size = new System.Drawing.Size(59, 38);
             this.btn_verzend.TabIndex = 14;
@@ -185,7 +185,7 @@
             this.tb_titel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tb_titel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_titel.Location = new System.Drawing.Point(425, 747);
-            this.tb_titel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_titel.Margin = new System.Windows.Forms.Padding(4);
             this.tb_titel.Name = "tb_titel";
             this.tb_titel.Size = new System.Drawing.Size(533, 37);
             this.tb_titel.TabIndex = 15;
@@ -194,8 +194,9 @@
             // flp_EigenBarks
             // 
             this.flp_EigenBarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.flp_EigenBarks.AutoScroll = true;
             this.flp_EigenBarks.Location = new System.Drawing.Point(427, 347);
-            this.flp_EigenBarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flp_EigenBarks.Margin = new System.Windows.Forms.Padding(4);
             this.flp_EigenBarks.Name = "flp_EigenBarks";
             this.flp_EigenBarks.Size = new System.Drawing.Size(603, 392);
             this.flp_EigenBarks.TabIndex = 16;
@@ -205,7 +206,7 @@
             this.pictureBox2.BackgroundImage = global::Barks.Properties.Resources.geen_profielfoto_man_silhouet_pasfoto_anoniem_600x600_1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(53, 101);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(257, 208);
             this.pictureBox2.TabIndex = 8;
@@ -215,7 +216,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
             this.pictureBox1.Location = new System.Drawing.Point(0, 198);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(2369, 74);
             this.pictureBox1.TabIndex = 5;
@@ -241,7 +242,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rh_bio);
             this.Controls.Add(this.tb_text);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Hooftmenu";
             this.Size = new System.Drawing.Size(1353, 873);
             this.Load += new System.EventHandler(this.Hooftmenu_Load);

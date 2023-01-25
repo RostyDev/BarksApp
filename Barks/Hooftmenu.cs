@@ -17,6 +17,8 @@ namespace Barks
     {
         public static AccountData ActiveAccount = new AccountData();
 
+        List<Bark> Barks = new List<Bark>();
+
         BarksAPIfuncties BarkFuncties = new BarksAPIfuncties();
 
         public Hooftmenu()
@@ -42,6 +44,9 @@ namespace Barks
 
         private void btn_verzend_Click(object sender, EventArgs e)
         {
+            flp_EigenBarks.Controls.Clear();
+            Barks.Clear();
+
             BarkFuncties.ActiveAccount = ActiveAccount;
 
             BarkFuncties.NewBark.Accountid = BarkFuncties.ActiveAccount.idAccounts;
@@ -52,7 +57,27 @@ namespace Barks
             BarkFuncties.PostBark();
 
             tb_titel.Clear();
-            tb_text.Clear();    
+            tb_text.Clear(); 
+            
+            BarkFuncties.GetPersonalBarks();
+
+            foreach (var bark in BarkFuncties.PersoonlijkeBarks)
+            {
+                Bark Tijdelijk = new Bark();
+
+                Tijdelijk.lb_Accountname.Text = bark.AccountNickname;
+                Tijdelijk.lb_titel.Text = bark.BarkTitel;
+                Tijdelijk.lbl_datum.Text = bark.BarkDate.ToString();
+                Tijdelijk.rhtb_text.Text = bark.BarkText;
+                Tijdelijk.Name = "BarkControl " + bark.id;
+
+                Barks.Add(Tijdelijk);
+            }
+
+            foreach (var BarkControl in Barks)
+            {
+                flp_EigenBarks.Controls.Add(BarkControl);
+            }
         }
     }
 }

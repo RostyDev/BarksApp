@@ -64,6 +64,8 @@ namespace Barks
             {
                 Hooftmenu.ActiveAccount = InlogCheck.ActiveAccount; 
 
+                
+
                 //Laad het hoofd scherm in\\
                 ((Form1)this.Parent).LoadHoofdScreen();
 
