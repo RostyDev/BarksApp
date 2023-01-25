@@ -39,18 +39,18 @@ namespace BarksAPI2
             conn.Close();
         }
 
-        public void sendBark()
-        {
-            conn = new MySqlConnection(connectionString);
-            conn.Open();
+        //public void sendBark()
+        //{
+        //    conn = new MySqlConnection(connectionString);
+        //    conn.Open();
 
-            var cmd = new MySqlCommand("INSERT INTO `barks`(`id`, `idAccount`, `BarkDate`, `BarkTitel`, `BarkText`, `BarkIsActive`) VALUES ('[value-1]','1','23-1-23','"+titel+"','"+text+"','1');", conn);
-            var reader = cmd.ExecuteReader();
+        //    var cmd = new MySqlCommand("INSERT INTO `barks`(`id`, `idAccount`, `BarkDate`, `BarkTitel`, `BarkText`, `BarkIsActive`) VALUES ('[value-1]','1','23-1-23','"+titel+"','"+text+"','1');", conn);
+        //    var reader = cmd.ExecuteReader();
 
 
-            reader.Close();
-            conn.Close();
-        }
+        //    reader.Close();
+        //    conn.Close();
+        //}
 
         public void loadBark()
         {

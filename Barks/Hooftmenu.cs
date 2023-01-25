@@ -39,11 +39,11 @@ namespace Barks
 
         private void btn_verzend_Click(object sender, EventArgs e)
         {
-            Accountpagina account = new Accountpagina();
+            //Accountpagina account = new Accountpagina();
 
-            account.titel = tb_titel.Text;
-            account.text = tb_text.Text;
-            account.sendBark();
+            //account.titel = tb_titel.Text;
+            //account.text = tb_text.Text;
+            //account.sendBark();
 
             tb_titel.Clear();
             tb_text.Clear();    
