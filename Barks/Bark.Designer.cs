@@ -72,6 +72,7 @@
             this.rhtb_text.Location = new System.Drawing.Point(0, 92);
             this.rhtb_text.Margin = new System.Windows.Forms.Padding(4);
             this.rhtb_text.Name = "rhtb_text";
+            this.rhtb_text.ReadOnly = true;
             this.rhtb_text.Size = new System.Drawing.Size(305, 162);
             this.rhtb_text.TabIndex = 3;
             this.rhtb_text.Text = "";

@@ -58,7 +58,14 @@ namespace Barks
 
             tb_titel.Clear();
             tb_text.Clear(); 
-            
+
+            LoadPersonalBarks();
+        }
+
+        public void LoadPersonalBarks()
+        {
+            BarkFuncties.ActiveAccount = ActiveAccount;
+
             BarkFuncties.GetPersonalBarks();
 
             foreach (var bark in BarkFuncties.PersoonlijkeBarks)

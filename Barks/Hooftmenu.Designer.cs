@@ -269,6 +269,6 @@
         private System.Windows.Forms.Label lbl_accountname;
         private System.Windows.Forms.Button btn_verzend;
         private System.Windows.Forms.TextBox tb_titel;
-        private System.Windows.Forms.FlowLayoutPanel flp_EigenBarks;
+        public System.Windows.Forms.FlowLayoutPanel flp_EigenBarks;
     }
 }

@@ -38,6 +38,7 @@ namespace Barks
             HoofdmenuScreen.Dock = DockStyle.Fill;
 
             HoofdmenuScreen.UpdatePage();
+            HoofdmenuScreen.LoadPersonalBarks();
 
             btn_Uitlog.Visible = true;
         }
