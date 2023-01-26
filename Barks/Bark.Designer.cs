@@ -31,10 +31,8 @@
             this.lb_titel = new System.Windows.Forms.Label();
             this.lbl_datum = new System.Windows.Forms.Label();
             this.rhtb_text = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_Accountname = new System.Windows.Forms.Label();
             this.btn_RemoveBark = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_titel
@@ -71,23 +69,12 @@
             this.rhtb_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rhtb_text.ForeColor = System.Drawing.Color.Yellow;
             this.rhtb_text.Location = new System.Drawing.Point(16, 92);
-            this.rhtb_text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rhtb_text.Margin = new System.Windows.Forms.Padding(4);
             this.rhtb_text.Name = "rhtb_text";
             this.rhtb_text.ReadOnly = true;
-            this.rhtb_text.Size = new System.Drawing.Size(289, 162);
+            this.rhtb_text.Size = new System.Drawing.Size(427, 162);
             this.rhtb_text.TabIndex = 3;
             this.rhtb_text.Text = "";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(313, 92);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 162);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // lb_Accountname
             // 
@@ -106,9 +93,9 @@
             this.btn_RemoveBark.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_RemoveBark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_RemoveBark.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RemoveBark.Location = new System.Drawing.Point(534, 27);
+            this.btn_RemoveBark.Location = new System.Drawing.Point(512, 214);
             this.btn_RemoveBark.Name = "btn_RemoveBark";
-            this.btn_RemoveBark.Size = new System.Drawing.Size(32, 25);
+            this.btn_RemoveBark.Size = new System.Drawing.Size(54, 37);
             this.btn_RemoveBark.TabIndex = 7;
             this.btn_RemoveBark.Text = "X";
             this.btn_RemoveBark.UseVisualStyleBackColor = false;
@@ -122,15 +109,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.btn_RemoveBark);
             this.Controls.Add(this.lb_Accountname);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rhtb_text);
             this.Controls.Add(this.lbl_datum);
             this.Controls.Add(this.lb_titel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Bark";
             this.Size = new System.Drawing.Size(569, 254);
             this.Load += new System.EventHandler(this.Bark_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,7 +125,6 @@
         public System.Windows.Forms.Label lb_titel;
         public System.Windows.Forms.Label lbl_datum;
         public System.Windows.Forms.RichTextBox rhtb_text;
-        public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lb_Accountname;
         private System.Windows.Forms.Button btn_RemoveBark;
     }

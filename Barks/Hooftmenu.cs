@@ -26,11 +26,6 @@ namespace Barks
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Hooftmenu_Load(object sender, EventArgs e)
         {
             UpdatePage();

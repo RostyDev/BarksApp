@@ -23,20 +23,27 @@ namespace Barks
 
         private void barkspagine_Load(object sender, EventArgs e)
         {
+            Reload();
+        }
+
+        public void Reload()
+        {
+            flp_BarksPanel.Controls.Clear();
+            AllBarks.Clear();
+
             BarksFuncties.GetAllBarks();
 
             foreach (var bark in BarksFuncties.AllBarks)
             {
                 Bark Tijdelijk = new Bark();
 
+                Tijdelijk.ActiveAccount = Hooftmenu.ActiveAccount;
                 Tijdelijk.Dock = DockStyle.Top;
-                Tijdelijk.id = bark.id;
-                Tijdelijk.idAccount = bark.Accountid;
+                Tijdelijk.ThisBark = bark;
                 Tijdelijk.lb_Accountname.Text = bark.AccountNickname;
                 Tijdelijk.lbl_datum.Text = bark.BarkDate.ToString();
                 Tijdelijk.lb_titel.Text = bark.BarkTitel;
                 Tijdelijk.rhtb_text.Text = bark.BarkText;
-                Tijdelijk.IsActive = bark.BarkActive;
 
                 AllBarks.Add(Tijdelijk);
             }
@@ -45,7 +52,7 @@ namespace Barks
 
             foreach (var bark in AllBarks)
             {
-                if (bark.IsActive == 1)
+                if (bark.ThisBark.BarkActive == 1)
                 {
                     flp_BarksPanel.Controls.Add(bark);
                 }

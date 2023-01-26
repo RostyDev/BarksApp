@@ -68,6 +68,7 @@ namespace Barks
         public void LoadBarksPage()
         {
             this.Controls.Add(BarksPagina);
+            BarksPagina.Reload();
             BarksPagina.Dock = DockStyle.Fill;
         }
 
