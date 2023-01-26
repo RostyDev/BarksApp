@@ -25,5 +25,10 @@ namespace Barks
         {
 
         }
+
+        private void btn_RemoveBark_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

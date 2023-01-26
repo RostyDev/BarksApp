@@ -14,6 +14,7 @@ namespace Barks
     public partial class barkspagine : UserControl
     {
         BarksAPIfuncties BarksFuncties = new BarksAPIfuncties();
+        List<Bark> AllBarks = new List<Bark>();
 
         public barkspagine()
         {
@@ -37,9 +38,16 @@ namespace Barks
                 Tijdelijk.rhtb_text.Text = bark.BarkText;
                 Tijdelijk.IsActive = bark.BarkActive;
 
-                if (Tijdelijk.IsActive == 1)
+                AllBarks.Add(Tijdelijk);
+            }
+
+            AllBarks.Reverse();
+
+            foreach (var bark in AllBarks)
+            {
+                if (bark.IsActive == 1)
                 {
-                    flp_BarksPanel.Controls.Add(Tijdelijk);
+                    flp_BarksPanel.Controls.Add(bark);
                 }
             }
         }

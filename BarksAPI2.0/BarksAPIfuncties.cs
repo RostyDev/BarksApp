@@ -97,5 +97,10 @@ namespace BarksAPI2._0
             reader.Close();
             Conn.Close();
         }
+
+        public void RemoveBark()
+        {
+
+        }
     }
 }

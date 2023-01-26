@@ -82,6 +82,7 @@ namespace Barks
             if (!this.Controls.Contains(Inloggen) || !this.Controls.Contains(AanmeldForm))
             {
                 UnloadMainPages();
+                HoofdmenuScreen.ClearPersonalbarks();
                 LoadHoofdScreen();
             }
         }
