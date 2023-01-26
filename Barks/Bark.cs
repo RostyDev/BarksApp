@@ -17,6 +17,8 @@ namespace Barks
         public BarkData ThisBark = new BarkData();
         public AccountData ActiveAccount = new AccountData();
 
+        InlogAPIfuncties AccountFuncties = new InlogAPIfuncties();
+
         public Bark()
         {
             InitializeComponent();
@@ -43,6 +45,12 @@ namespace Barks
             }
             
             DeleteBarkFunctie.DeleteBark = null;
+        }
+
+        private void lb_Accountname_Click(object sender, EventArgs e)
+        {
+            AccountFuncties.ClickedAccount.idAccounts = ThisBark.Accountid;
+            AccountFuncties.GetClickedAccount();
         }
     }
 }

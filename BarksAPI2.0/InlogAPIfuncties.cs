@@ -20,6 +20,7 @@ namespace BarksAPI2._0
 
         public AccountData ActiveAccount = new AccountData();
         public AccountData NieuwAccount = new AccountData();
+        public AccountData ClickedAccount = new AccountData();
 
         private MySqlConnection Conn;
 
@@ -90,6 +91,23 @@ namespace BarksAPI2._0
         public void Hash(string Password) 
         {
             HashWW = Password.GetHashCode();
+        }
+
+        public void GetClickedAccount()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("SELECT idAccounts, AccountNickname, AccountRealname, AccountsBio, AccountAge FROM accounts " +
+                "WHERE idAccounts LIKE "+ ClickedAccount.idAccounts +";", Conn);
+            var reader = cmd.ExecuteReader();
+
+            while (reader.Read()) 
+            {
+                ClickedAccount.idAccounts = reader.GetInt32("idAccounts");
+            }
+
+            reader.Close();
+            Conn.Close();
         }
     }
 }

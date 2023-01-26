@@ -86,6 +86,7 @@
             this.lb_Accountname.Size = new System.Drawing.Size(99, 25);
             this.lb_Accountname.TabIndex = 5;
             this.lb_Accountname.Text = "username";
+            this.lb_Accountname.Click += new System.EventHandler(this.lb_Accountname_Click);
             // 
             // btn_RemoveBark
             // 
