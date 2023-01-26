@@ -99,7 +99,6 @@ namespace Barks
         private void btn_BarksPage_Click(object sender, EventArgs e)
         {
             ((Form1)this.Parent).LoadBarksPage();
-            ((Form1)this.Parent).Controls.Remove(this);
         }
 
         public void ClearPersonalbarks()

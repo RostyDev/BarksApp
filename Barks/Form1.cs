@@ -15,7 +15,7 @@ namespace Barks
     {
         InlogScreen Inloggen = new InlogScreen();
         Hooftmenu HoofdmenuScreen = new Hooftmenu();
-        Hooftmenu AnderAccount = new Hooftmenu();
+        UserAccount AnderAccount = new UserAccount();
         AanmeldFormulier AanmeldForm = new AanmeldFormulier();
         barkspagine BarksPagina = new barkspagine();
 
@@ -36,6 +36,12 @@ namespace Barks
 
         public void LoadHoofdScreen()
         {
+            if (this.Controls.Contains(AanmeldForm))
+            {
+                Hooftmenu.ActiveAccount = AanmeldForm.AanmeldFunctie.ActiveAccount;
+                InlogScreen.InlogCheck.ActiveAccount = AanmeldForm.AanmeldFunctie.ActiveAccount;
+            }
+
             this.Controls.Add(HoofdmenuScreen);
             HoofdmenuScreen.Dock = DockStyle.Fill;
 
@@ -48,8 +54,12 @@ namespace Barks
         public void LoadUserAccount()
         {
             UnloadMainPages();
+
             this.Controls.Add(AnderAccount);
             AnderAccount.Dock = DockStyle.Fill;
+
+            AnderAccount.UpdatePage();
+            AnderAccount.LoadUserBarks();
         }
 
         public void LoadAanmeldForm()
@@ -75,6 +85,8 @@ namespace Barks
 
         public void LoadBarksPage()
         {
+            UnloadMainPages();
+
             this.Controls.Add(BarksPagina);
             BarksPagina.Reload();
             BarksPagina.Dock = DockStyle.Fill;

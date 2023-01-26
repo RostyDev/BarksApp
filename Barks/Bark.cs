@@ -16,6 +16,7 @@ namespace Barks
     {
         public BarkData ThisBark = new BarkData();
         public AccountData ActiveAccount = new AccountData();
+        AccountData ClickedAccount = new AccountData(); 
 
         InlogAPIfuncties AccountFuncties = new InlogAPIfuncties();
 
@@ -51,6 +52,14 @@ namespace Barks
         {
             AccountFuncties.ClickedAccount.idAccounts = ThisBark.Accountid;
             AccountFuncties.GetClickedAccount();
+
+            ClickedAccount = AccountFuncties.ClickedAccount;
+
+            UserAccount.ClickedUser = ClickedAccount;
+
+            FlowLayoutPanel T1 = ((FlowLayoutPanel)this.Parent);
+            barkspagine T2 = ((barkspagine)T1.Parent);
+            ((Form1)T2.Parent).LoadUserAccount();
         }
     }
 }

@@ -104,6 +104,10 @@ namespace BarksAPI2._0
             while (reader.Read()) 
             {
                 ClickedAccount.idAccounts = reader.GetInt32("idAccounts");
+                ClickedAccount.AccountNickname = reader.GetString("AccountNickname");
+                ClickedAccount.AccountRealname = reader.GetString("AccountRealname");
+                ClickedAccount.AccountsBio = reader.GetString("AccountsBio");
+                ClickedAccount.AccountAge = reader.GetInt32("AccountAge");
             }
 
             reader.Close();
