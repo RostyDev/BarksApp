@@ -17,6 +17,7 @@ namespace Barks
         public static AccountData ClickedUser = new AccountData();
 
         BarksAPIfuncties BarkFuncties = new BarksAPIfuncties();
+        InlogAPIfuncties FollowScript = new InlogAPIfuncties();
         List<Bark> Barks = new List<Bark>();
 
         public UserAccount()
@@ -68,6 +69,16 @@ namespace Barks
             {
                 flp_EigenBarks.Controls.Add(BarkControl);
             }
+        }
+
+        private void btn_FollowUser_Click(object sender, EventArgs e)
+        {
+            FollowScript.ActiveAccount = Hooftmenu.ActiveAccount;
+            FollowScript.ClickedAccount = ClickedUser;
+
+            FollowScript.Follow();
+
+            btn_FollowUser.Text = "Following";
         }
     }
 }

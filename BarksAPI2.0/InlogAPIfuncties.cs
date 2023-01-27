@@ -113,5 +113,16 @@ namespace BarksAPI2._0
             reader.Close();
             Conn.Close();
         }
+
+        public void Follow()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("INSERT INTO relatie(idAccount1, idAccount2) VALUES ('"+ActiveAccount.idAccounts+"','"+ClickedAccount.idAccounts+"')", Conn);
+            var reader = cmd.ExecuteReader();
+
+            reader.Close();
+            Conn.Close();
+        }
     }
 }
