@@ -111,6 +111,7 @@ namespace Barks
 
                     AanmeldFunctie.ActiveAccount = AanmeldFunctie.NieuwAccount;
 
+
                     ((Form1)this.Parent).LoadHoofdScreen();
 
                     if (((Form1)this.Parent).Controls.Contains(this))
