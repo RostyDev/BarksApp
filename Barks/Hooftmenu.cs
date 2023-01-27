@@ -26,11 +26,6 @@ namespace Barks
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Hooftmenu_Load(object sender, EventArgs e)
         {
             UpdatePage();
@@ -44,7 +39,7 @@ namespace Barks
 
         private void btn_verzend_Click(object sender, EventArgs e)
         {
-            flp_EigenBarks.Controls.Clear();
+            ClearPersonalbarks();
             Barks.Clear();
 
             BarkFuncties.ActiveAccount = ActiveAccount;
@@ -81,6 +76,8 @@ namespace Barks
                 Barks.Add(Tijdelijk);
             }
 
+            Barks.Reverse();
+
             foreach (var BarkControl in Barks)
             {
                 flp_EigenBarks.Controls.Add(BarkControl);
@@ -102,7 +99,12 @@ namespace Barks
         private void btn_BarksPage_Click(object sender, EventArgs e)
         {
             ((Form1)this.Parent).LoadBarksPage();
-            ((Form1)this.Parent).Controls.Remove(this);
+        }
+
+        public void ClearPersonalbarks()
+        {
+            Barks.Clear();
+            flp_EigenBarks.Controls.Clear();
         }
     }
 }

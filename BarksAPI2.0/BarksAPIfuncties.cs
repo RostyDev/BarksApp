@@ -15,6 +15,7 @@ namespace BarksAPI2._0
 
         public AccountData ActiveAccount = new AccountData();
         public BarkData NewBark = new BarkData();
+        public BarkData DeleteBark = new BarkData();
 
         private MySqlConnection Conn;
 
@@ -73,6 +74,8 @@ namespace BarksAPI2._0
 
         public void GetAllBarks()
         {
+            AllBarks.Clear();
+
             OpenConn();
 
             var cmd = new MySqlCommand("SELECT id, idAccount, accounts.AccountNickname, BarkDate, BarkTitel, BarkText, BarkIsActive " +
@@ -93,6 +96,17 @@ namespace BarksAPI2._0
 
                 AllBarks.Add(TijdelijkeBark);
             }
+
+            reader.Close();
+            Conn.Close();
+        }
+
+        public void RemoveBark()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("DELETE FROM barks WHERE id LIKE "+ DeleteBark.id +"", Conn);
+            var reader = cmd.ExecuteReader();
 
             reader.Close();
             Conn.Close();

@@ -20,6 +20,7 @@ namespace BarksAPI2._0
 
         public AccountData ActiveAccount = new AccountData();
         public AccountData NieuwAccount = new AccountData();
+        public AccountData ClickedAccount = new AccountData();
 
         private MySqlConnection Conn;
 
@@ -90,6 +91,38 @@ namespace BarksAPI2._0
         public void Hash(string Password) 
         {
             HashWW = Password.GetHashCode();
+        }
+
+        public void GetClickedAccount()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("SELECT idAccounts, AccountNickname, AccountRealname, AccountsBio, AccountAge FROM accounts " +
+                "WHERE idAccounts LIKE "+ ClickedAccount.idAccounts +";", Conn);
+            var reader = cmd.ExecuteReader();
+
+            while (reader.Read()) 
+            {
+                ClickedAccount.idAccounts = reader.GetInt32("idAccounts");
+                ClickedAccount.AccountNickname = reader.GetString("AccountNickname");
+                ClickedAccount.AccountRealname = reader.GetString("AccountRealname");
+                ClickedAccount.AccountsBio = reader.GetString("AccountsBio");
+                ClickedAccount.AccountAge = reader.GetInt32("AccountAge");
+            }
+
+            reader.Close();
+            Conn.Close();
+        }
+
+        public void Follow()
+        {
+            OpenConn();
+
+            var cmd = new MySqlCommand("INSERT INTO relatie(idAccount1, idAccount2) VALUES ('"+ActiveAccount.idAccounts+"','"+ClickedAccount.idAccounts+"')", Conn);
+            var reader = cmd.ExecuteReader();
+
+            reader.Close();
+            Conn.Close();
         }
     }
 }

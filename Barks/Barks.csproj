@@ -124,6 +124,12 @@
     <Compile Include="Hooftmenu.Designer.cs">
       <DependentUpon>Hooftmenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AanmeldFormulier.resx">
       <DependentUpon>AanmeldFormulier.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="Hooftmenu.resx">
       <DependentUpon>Hooftmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
